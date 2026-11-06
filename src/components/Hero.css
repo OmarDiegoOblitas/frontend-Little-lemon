@@ -1,0 +1,12 @@
+.hero { background: var(--color-primary); color: #fff; padding-block: var(--space-12); }
+.hero h1 { color: var(--color-accent); }
+.hero__slogan { font-family: var(--font-title); font-size: 1.75rem; margin-block: var(--space-2) var(--space-4); }
+.hero__text p + p, .hero__text p ~ .btn { margin-top: var(--space-4); }
+.hero__inner { display: grid; gap: var(--space-8); align-items: center; }
+.hero__img { width: 100%; height: 260px; object-fit: cover; border-radius: var(--radius); }
+
+@media (min-width: 768px) {
+  .hero { padding-block: var(--space-16); }
+  .hero__inner { grid-template-columns: 1fr 1fr; }
+  .hero__img { height: 380px; }
+}
